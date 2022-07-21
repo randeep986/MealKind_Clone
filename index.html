@@ -5,261 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KindMeal</title>
-    <style>
-        *{
-            margin: 0px;
-            
-        }
-        #top-panel{
-            border: 0px solid red;
-            display: flex;
-            justify-content: space-evenly;
-            padding: 5px;
-            
-        }
-        #top-panel>div{
-            display: flex;
-            border: 0px solid brown;
-            justify-content: center;
-        }
-        #top-panel>div>div{
-            border: 0px solid black;
-            width: 14%;
-            margin: 5px 10px;
-            
-            
-        }
-        #top-panel>div>div>img{
-            padding-top: 10px;
-            width: 100%;
-        }
-        #navigator {
-            border: 0px solid red;
-            background-color: #529c6e;
-            position: sticky;  
-            width: 100%;  
-            top: 0px; 
-        }
-        #navigator>div{
-            border: 0px solid black;
-            display: flex;
-            justify-content: space-around;
-            width: 86%;
-            margin: auto;
-            color: white;
-            font-family: 'Roboto', Arial, Helvetica, sans-serif;
-            font-size: 18px;
-           
-        }
-        #navigator>div>div{
-            border:0px solid blue;
-            padding: 10px 20px;   
-        }
-        #navigator>div>div:hover{
-            color: #d8e6dd;  
-            cursor: pointer;
-            
-        }
-        #top-right>span{
-            margin: 30px 5px;
-            padding: 3px 15px;
-        }
-        #top-right>span:nth-child(2){
-            border: 0px solid red;
-            background-color: #35619f;
-            color: white;
-            font-weight: bold; 
-            border-radius: 5px;
-        }
-        #top-right>span:nth-child(3){
-            border: 0px solid red;
-            background-color: #666666;
-            color: white;
-            font-weight: bold;
-            border-radius: 5px;    
-        }
-        #super{
-            border: 0px solid red;
-            background: linear-gradient(to bottom, rgba(252,252,252,1) 0%,rgba(252,252,252,1) 75%,rgba(224,224,224,1) 100%,rgba(224,224,224,1) 100%);
-        }
-        .content{
-            border: 0px solid black;
-            width: 83%;
-            margin: auto;
-            margin-top: 20px;
-            padding: 20px;
-            font-family: 'Roboto', Arial, Helvetica, sans-serif;
-            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-            color: #666666;
-            font-weight: normal;
-        }
-        .content>div{
-            display: grid;
-            grid-template-columns: repeat(5,1fr);
-            gap: 10px;
-            /* margin: auto; */
-            padding: 10px 0px 0px 0px;
-            border: 0px solid black;
-        }
-        .content>span {
-            display: flex;
-            justify-content: space-between;
-            border: 0px solid brown;
-        }
-        .content>span>h1{
-            border: 0px solid black;
-        }
-        .content>span>div{
-            display: flex;
-            border: 0px solid red;
-            color: #2184ff;
-            font-weight: bolder;
-            font-size: 20px;
-            padding-top: 10px;
-        }
-        .content>span>div>p:hover{
-            text-decoration: underline;
-            cursor: pointer ;
-        }
-        .content>span>div>p{ 
-            border: 0px solid blue;
-            margin: 0px 10px;
-        }
-        .content>div>div {
-            border: 0px solid red;
-            text-align: center;
-            font-size: 14px;           
-        }
-        .content>div>div>img{
-            width: 100%;
-            height: 250px;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-        }
-        #gift{
-            color: rgb(197, 157, 95);
-        }
-        #mid{
-            display: grid;
-            grid-template-rows: auto;
-            text-align: center;
-            
-            font-family: 'Roboto', Arial, Helvetica, sans-serif;
-            color: #666666;
-            
-            
-                 
-        }
-
-        #mid>div:first-child{
-            font-size: 36px;
-            line-height: 50px;
-            padding-top: 40px;
-            border: px solid red;
-        }
-        #mid>div:nth-child(2){
-            display: flex;
-            align-items: center;
-            margin: auto;
-            border: 0px solid green;
-            gap: 30px;
-            font-size: 18px;
-            
-            
-        }
-        #mid>div:nth-child(2) img{
-            height: 60px;
-        }
-        #mid>div:nth-child(3),#mid>div:nth-child(7){
-            font-size: 24px;
-            line-height: 100px;
-        }
-        #mid>div:nth-child(4){
-            display: grid;
-            grid-template-columns: repeat(4,1fr);
-            width: 80%;
-            margin: auto;
-            gap: 30px;
-            
-            
-            
-        }
-        #mid>div:nth-child(4) div{
-            border: 0px solid red;
-            padding: 20px;
-            border: 1px solid #d8d8d8;
-            border-radius: 10px;
-            box-shadow: 1px 1px 2px #cccccc;
-            font-size: 14px;
-            color: #888888;
-            
-        }
-        #mid>div:nth-child(4)>div :nth-child(2){
-            border: 0px solid black;
-            line-height: 40px;
-            font-size: 20px;
-            color: #4b4747;
-           
-        }
-        #mid>div:nth-child(5){
-            width: 70%;
-            margin: auto;
-            font-size: 20px;
-            color: #888888;
-            margin-top: 40px;
-        }
-        #mid>div:nth-child(6){
-            border: 0px solid red;
-            margin: 40px auto ;
-            width: 30%;
-            padding: 20px 0px;
-            border-radius: 10px;
-            background-color: #f53838;
-            color: white;
-            
-        }
-        #mid>div:nth-child(8),#mid>div:nth-child(9){
-            margin-top: 20px;
-        }
-        #mid>div:nth-child(9){
-            background-color: #ececec;
-            margin-left: 0px;
-            margin-right: 0px;
-        }
-        #footer, #copyright>p {
-            background-color: #2bb673;
-            color: white;
-        }
-        #footer>span {
-            display: grid;
-            grid-template-columns: repeat(5,1fr);
-            margin: 0px auto 0px auto;
-            width: 65%;
-            border: 0px solid black;
-            padding: 30px 0px 10px 0px;
-            text-align: left;
-            line-height: 20px;
-            font-family: 'Roboto', Arial, Helvetica, sans-serif;
-        }
-        #footer>span> div{
-            padding: 2px;
-        }
-        #footer>span> div>p:first-child{
-            font-weight: bold;
-        }
-        #copyright>p {
-            text-align: center;
-            font-size: 10px;
-            font-family: 'Roboto', Arial, Helvetica, sans-serif;
-            padding: 10px;
-            
-        }
-        #copyright>p+p {
-            margin-top: -20px;
-        }
-
-
-    </style>
+   <link rel="stylesheet" href="home.css">
 </head>
 <body>
     <div id="top-panel">
@@ -290,6 +36,14 @@
        <div>Articles</div>
        <div>Help</div>
     </div>
+</div>
+<div id="crauser">
+    
+        <img id="jaja" src="https://www.kindmeal.my/photos/deal/5/590-3137-m.jpg" alt="">
+        <button id="left-btn"> &lt; </button>
+        <button id="right-btn"> &gt; </button>
+    
+    
 </div>
 <div id="super">
 <div class="content">
@@ -571,8 +325,34 @@
         <p>Copyright © KindMeal.my, 2014 - 2022. All rights reserved.</p>
         <p>This website promotes compassionate, meat-free dining experience. Some food may contain eggs, dairy products or alcohol, please view individual listings for details.</p>
     </span>
-
-
 </body>
 </html>
 
+<script>
+    let imagesLink=[
+        "https://www.kindmeal.my/photos/deal/5/590-3137-m.jpg",
+    "https://www.kindmeal.my/photos/deal/4/424-1404-m.jpg",
+    "https://www.kindmeal.my/photos/deal/6/664-4296-m.jpg"
+    ]
+    let leftBtn=document.getElementById("left-btn")
+    let rightBtn=document.getElementById("right-btn")
+    let crouser=document.getElementById("jaja")
+    let imageState=0;
+    rightBtn.addEventListener("click", function(){
+        imageState++;
+        if(imageState===imagesLink.length){
+            imageState=0;
+        }
+
+            jaja.src=imagesLink[imageState];
+    
+    
+    })
+    leftBtn.addEventListener("click", function(){
+        imageState--;
+        if(imageState<0){
+            imageState=imagesLink.length-1
+        }
+        jaja.src=imagesLink[imageState];
+    })
+</script>
