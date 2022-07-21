@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            
+        }
+        #top-panel{
+            border: 0px solid red;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 5px;
+            
+        }
+        #top-panel>div{
+            display: flex;
+            border: 0px solid brown;
+            justify-content: center;
+        }
+        #top-panel>div>div{
+            border: 0px solid black;
+            width: 14%;
+            margin: 5px 10px;
+            
+            
+        }
+        #top-panel>div>div>img{
+            padding-top: 10px;
+            width: 100%;
+        }
+        #navigator {
+            border: 0px solid red;
+            background-color: #529c6e;
+            position: sticky;  
+            width: 100%;  
+            top: 0px; 
+        }
+        #navigator>div{
+            border: 0px solid black;
+            display: flex;
+            justify-content: space-around;
+            width: 86%;
+            margin: auto;
+            color: white;
+            font-family: 'Roboto', Arial, Helvetica, sans-serif;
+            font-size: 18px;
+           
+        }
+        #navigator>div>div{
+            border:0px solid blue;
+            padding: 10px 20px;   
+        }
+        #navigator>div>div:hover{
+            color: #d8e6dd;  
+            cursor: pointer;
+            
+        }
+        #top-right>span{
+            margin: 30px 5px;
+            padding: 3px 15px;
+        }
+        #top-right>span:nth-child(2){
+            border: 0px solid red;
+            background-color: #35619f;
+            color: white;
+            font-weight: bold; 
+            border-radius: 5px;
+        }
+        #top-right>span:nth-child(2):hover{
+            background-color: #5C6BC0;
+            cursor: pointer;
+        }
+        #top-right>span:nth-child(3){
+            border: 0px solid red;
+            background-color: #666666;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;    
+        }
+        #top-right>span:nth-child(3):hover{
+            background-color: #78909C;
+            cursor: pointer;
+            
+
+        }
+        #top-content{
+            
+            border: 0px solid red;
+            padding: 30px 0px 20px 0px;
+            background-color: rgb(240, 240, 240);
+            width: 100%;
+            margin: auto;
+            font-family: 'Roboto', Arial, Helvetica, sans-serif;
+        }
+        #top-content>div{
+            border: 0px solid black;
+            width: 80%;
+            margin: auto;
+            color: #444444;
+        }
+        
+        #top-content>div>div:first-child{
+            font-size: 36px;
+    
+        }
+       
+        #top-content>div>div~div {
+            margin: 10px 0px 10px 0px;
+            font-size: 16px;
+        }
+        #top-content>div>div:nth-child(3)>span{
+            color: blue;
+        }
+        #top-content>div>div:nth-child(3)>span:hover{
+            cursor: pointer;
+            color: #35619f;
+        }
+        .content{
+            border: 1px solid red;
+            margin: auto;
+            width: 80%;
+            /* height: 300px; */
+            font-family: 'Roboto', Arial, Helvetica, sans-serif;
+        }
+        .content>div{
+            border: 1px solid black;
+            display: grid;
+            grid-template-columns: 45% 1fr;
+            line-height: 30px;
+            /* width: 80%; */
+            margin: auto;
+            /* height: 300px; */
+            margin-bottom: 30px;
+            border-radius: 20px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            
+        }
+       
+        .content>div>div img{
+            width: 100%;
+            height: 100%;
+            
+            /* margin: 0px; */
+            /* padding: 0px; */
+            border: 1px solid black;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+        .content>div>div{
+            border: 2px solid brown;
+            /* height: 300px; */
+        }
+        .content>div>div~div{
+            border: 1px solid black;
+            padding: 40px;    
+            /* height: 300px;  */
+        }
+        .content>div>div:nth-child(2)>div:nth-child(1){
+            font-size: 36px;
+        }
+        .content>div>div:nth-child(2)>div:nth-child(3){
+            margin-top: 40px;
+            margin-bottom: 30px;
+
+        }
+        .content>div>div:nth-child(2)>div:nth-child(4){
+            border: 0px solid red;
+            display: flex;
+            justify-content: space-between;
+
+        }
+        .content>div>div:nth-child(2)>div:nth-child(4)>div:first-child{
+            border: 0px solid red;
+            padding: 10px 55px;
+            border-radius: 15px;
+            font-size: 20px;
+            font-weight: bolder;
+            background-color: red;
+            color: white;
+            
+        }
+        .content>div>div:nth-child(2)>div:nth-child(4)>div:first-child:hover{
+            cursor: pointer;
+            background-color: rgb(212, 90, 90);
+        }
+        .content>div>div:nth-child(2)>div:nth-child(4)>div:last-child{
+            border: 0px solid red;
+            text-align: center;
+            padding: 10px 35px;
+        }  
+        .spec1{
+            height: 300px;
+        }
+        .spec2{
+            height: 400px;
+        }
+        .spec4{
+            height: 440px;
+        }
+        #footer, #copyright>p {
+    background-color: #2bb673;
+    color: white;
+}
+#footer>span {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    margin: 0px auto 0px auto;
+    width: 65%;
+    border: 0px solid black;
+    padding: 30px 0px 10px 0px;
+    text-align: left;
+    line-height: 20px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+#footer>span> div{
+    padding: 2px;
+}
+#footer>span> div>p:first-child{
+    font-weight: bold;
+}
+#copyright>p {
+    text-align: center;
+    font-size: 10px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    padding: 10px;
+    
+}
+#copyright>p+p {
+    margin-top: -20px;
+}
+
+        </style>
+</head>
+<body>
+    <div id="top-panel">
+        <div><img src="https://www.kindmeal.my/images/logo-kindmeal.png" alt=""></div>
+        <div>
+            
+            <div><img src="https://www.kindmeal.my/images/follow_blog_grey.png" alt=""></div>
+            <div><img src="https://www.kindmeal.my/images/follow_facebook_grey.png" alt=""></div>
+            <div><img src="https://www.kindmeal.my/images/follow_twitter_grey.png" alt=""></div>
+
+        </div>
+        <div id="top-right">
+            <span>Login</span>
+            <span>Facebook</span>
+            <span>Email </span>
+            <span>Signup</span>
+        </div>
+    </div>
+    <div id="navigator">
+        <div>
+
+            <div>Home</div>
+            <div>Meal Deals</div>
+            <div>KindMoments</div>
+            <div>Hot Picks</div>
+       <div>Recipes</div>
+       <div>Directory</div>
+       <div>Articles</div>
+       <div>Help</div>
+    </div>
+</div>
+<div id="top-content">
+    <div>
+    <div>Yummy News, Articles & Videos </div>
+    <div>Want to keep updated on the latest news of delicious meat-free meals and adorable animals? Check out this section for interesting daily happenings and articles that will melt your tummy (and heart too).</div>
+    <div>You can also follow our <span>Facebook Page </span>  or <span>Twitter</span> for more news and updates.</div>
+</div>
+</div>
+<div id="page_number">
+    <div>
+        <div>Page</div>
+        <div>1</div>
+        <div>2 </div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>...</div>
+        <div>57</div>
+    </div>
+    <div>
+        Next
+    </div>
+</div>
+<div class="content">
+    <div>
+        <div>
+            <img src="https://www.kindmeal.my/photos/article/19/19944-l.jpg" alt="">           
+        </div>
+        <div>
+            <div> <p>Simply Good Food At 1 Mont Kiara!</p> </div>
+            <div><p>by KindMeal.my</p></div>
+            <div>Simply delicious. Simply irresistible. Simply Good Food! Enjoy 10% off with KindMeal:</div>
+            <div>
+                <div>Video View</div>
+                <div>21 July 2022</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content"  >
+    <div >
+        <div class="spec1">
+            <img src="https://www.kindmeal.my/photos/article/19/19937-l.jpg" alt="">           
+        </div>
+        <div>
+            <div> <p>
+                Animals Adopting Other Animals</p> </div>
+            <div><p>by KindMeal.my</p></div>
+            <div>These BFFs may look a little different... but they are buddies nevertheless! ❤</div>
+            <div>
+                <div>Video View</div>
+                <div>20 July 2022</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content">
+    <div>
+        <div class="spec2">
+            <img src="https://www.kindmeal.my/photos/article/19/19936-l.jpg" alt="">           
+        </div>
+        <div>
+            <div> <p>
+                Malaysia Seizes Elephant Tusks, Pangolin Scales In Major Bust</p> </div>
+            <div><p>by KindMeal.my</p></div>
+            <div>Malaysian authorities have seized African elephant tusks, pangolin scales, tiger teeth, and other wildlife skulls and bones with an estimated worth of RM80 million. Well done and bravo!</div>
+            <div>
+                <div>Video View</div>
+                <div>20 July 2022</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content">
+    <div>
+        <div>
+            <img src="https://www.kindmeal.my/photos/article/19/19943-l.jpg" alt="">           
+        </div>
+        <div>
+            <div> <p>
+                Veganism Meets Star Trek In Our Latest Episode Of Pop Culture And Animals, And T..</p> </div>
+            <div><p>by Compession Over Killing</p></div>
+            <div>Veganism🌱 meets Star Trek🛸 in our latest episode of Pop Culture and Animals, and the connection is more than just Paul Wesley playing Captain Kirk in the next season of Star Trek: Strange New Worlds. Click here to watch #GoVegan #veganism</div>
+            <div>
+                <div>Video View</div>
+                <div>19 July 2022</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content">
+    <div>
+        <div>
+            <img src="https://www.kindmeal.my/photos/article/19/19942-l.jpg" alt="">           
+        </div>
+        <div>
+            <div> <p>
+                All Animals Deserve To Be Happy. Let''s Continue To Create A Loving World For Ani..</p> </div>
+            <div><p>by Compassion Over Killing</p></div>
+            <div>All animals deserve to be happy. Let's continue to create a loving world for animals everywhere. #animalrights #GoVegan Image: Tom Woollard / We Animals Media</div>
+            <div>
+                <div>Video View</div>
+                <div>19 July 2022</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content">
+    <div>
+        <div class="spec3">
+            <img src="https://www.kindmeal.my/photos/article/19/19940-l.jpg" alt="">           
+        </div>
+        <div>
+            <div> <p>
+                The Science On Fish Sentience Is Clear Fish Have The Capacity To Suffer And Feel..</p> </div>
+            <div><p>by Compassion Over Killing</p></div>
+            <div>The science on fish sentience is clear: fish have the capacity to suffer and feel pain.” - Becca Franks, fish scientist. Read about our 2019 investigation, the first-ever undercover exposé of salmon aquaculture in the U.S. here:</div>
+            <div>
+                <div>Video View</div>
+                <div>21 July 2022</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content">
+    <div>
+        <div class="spec4">
+            <img src="https://www.kindmeal.my/photos/article/19/19941-l.jpg" alt="">           
+        </div>
+        <div>
+            <div> <p>
+                Cows Trapped In The Animal Agriculture System Suffer Unnatural Lives Of Torture...</p> </div>
+            <div><p>by Compassion Over Killing</p></div>
+            <div>Cows trapped in the animal agriculture system suffer unnatural lives of torture. They don't belong crammed together in filthy conditions, but instead should be allowed the freedom any living creature deserves. To learn more about what a cow's life is like in the dairy industry, watch The Life of Win..</div>
+            <div>
+                <div>Video View</div>
+                <div>21 July 2022</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="footer">
+    <span>
+    <div> 
+        <p>General</p> 
+        <p>Home</p>
+        <p>Sign Up</p>
+        <p>Business / Restaurateurs</p>
+        <p>Advertising</p>
+        <p>About KindMeal.my</p>
+        <p>Help & FAQ</p>
+        <p>Terms & Conditions</p>
+        <p>Inspiring Partners</p>
+        <p>Lifestyle Ambassadors</p>
+        <p>Jobs & Careers</p>
+        <p>Contact Us</p>
+        
+    </div>
+    <div> 
+        <p>Features</p>
+        <p>Meat-Free Deals</p>
+        <p>Tasty Menus</p>
+        <p>Kind Moments</p>
+        <p>Meat-Free Recipes</p>
+        <p>Member Recommendations</p>
+        <p>Featured Restaurants</p>
+        <p>Vegetarian & Vegan Directory</p>
+        <p>Food Map</p>
+        <p>Become A Superhero</p>
+        <p>Vegan News & Vegetarian Articles</p>
+        <p>Latest Comments</p>
+
+        </div>
+    <div>
+        <p>Social Media</p>
+        <p>KindMeal Widget</p>
+        <p>Facebook</p>
+        <p>Twitter</p>
+        <p>Instagram</p>
+    </div>
+    <div>
+        <p>Mobile</p>
+        <p>iPhone & iPod App</p>
+        <p>Android App</p>
+        <br>
+        <p style="font-weight: bolder;">Exciting Promos</p>
+        <p>Gadhimai: Ending Mass Slaughter</p>
+        <p>Free Meals</p>
+        <p>Food Bloggers</p>
+        <p>Uber CHIRP</p>
+        <p>Jane Goodall Contest</p>
+        <p>Win Digi iPhone 6</p>
+        <p>Feed The Poor</p>
+        <p>Win Superhero Gifts</p>
+        <p>Win an iPad Mini 4</p>
+    </div>
+    <div>
+        <p>PetFinder.my</p>
+        <p>Adopt a pet</p>
+        <p>Smartphone Apps</p>
+        <p>WAGazine</p>
+        <p>Dicussion Forum</p>
+        <p>Medical Fund</p>
+    </div>
+</span>
+</div>
+<span id="copyright" >
+    <p>Copyright © KindMeal.my, 2014 - 2022. All rights reserved.</p>
+    <p>This website promotes compassionate, meat-free dining experience. Some food may contain eggs, dairy products or alcohol, please view individual listings for details.</p>
+</span>
+</body>
+</html>
