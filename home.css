@@ -76,7 +76,7 @@
     border: 0px solid red;
     background: linear-gradient(to bottom, rgba(252,252,252,1) 0%,rgba(252,252,252,1) 75%,rgba(224,224,224,1) 100%,rgba(224,224,224,1) 100%);
 }
-.content{
+.contents{
     border: 0px solid black;
     width: 83%;
     margin: auto;
@@ -87,7 +87,7 @@
     color: #666666;
     font-weight: normal;
 }
-.content>div{
+.contents>div{
     display: grid;
     grid-template-columns: repeat(5,1fr);
     gap: 10px;
@@ -95,15 +95,15 @@
     padding: 10px 0px 0px 0px;
     border: 0px solid black;
 }
-.content>span {
+.contents>span {
     display: flex;
     justify-content: space-between;
     border: 0px solid brown;
 }
-.content>span>h1{
+.contents>span>h1{
     border: 0px solid black;
 }
-.content>span>div{
+.contents>span>div{
     display: flex;
     border: 0px solid red;
     color: #2184ff;
@@ -111,20 +111,20 @@
     font-size: 20px;
     padding-top: 10px;
 }
-.content>span>div>p:hover{
+.contents>span>div>p:hover{
     text-decoration: underline;
     cursor: pointer ;
 }
-.content>span>div>p{ 
+.contents>span>div>p{ 
     border: 0px solid blue;
     margin: 0px 10px;
 }
-.content>div>div {
+.contents>div>div {
     border: 0px solid red;
     text-align: center;
     font-size: 14px;           
 }
-.content>div>div>img{
+.contents>div>div>img{
     width: 100%;
     height: 250px;
     border-top-left-radius: 10px;
@@ -282,6 +282,9 @@ button:nth-child(3){
     right: 150px;
     background-color: black;
     color: white;
+}
+.articleH{
+    display: none;
 }
 
 
