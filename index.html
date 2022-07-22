@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KindMeal</title>
-   <link rel="stylesheet" href="home.css">
+  
 </head>
 <body>
     <div id="top-panel">
@@ -13,17 +13,17 @@
         <div>
             
             <div><img src="https://www.kindmeal.my/images/follow_blog_grey.png" alt=""></div>
-            <div><img src="https://www.kindmeal.my/images/follow_facebook_grey.png" alt=""></div>
+            <div ><img src="https://www.kindmeal.my/images/follow_facebook_grey.png" alt=""></div>
             <div><img src="https://www.kindmeal.my/images/follow_twitter_grey.png" alt=""></div>
 
         </div>
         <div id="top-right">
-            <span>Login</span>
-            <span>Facebook</span>
+            <span  onclick="signinFunc()">Login</span>
+            <span onclick="fac()">Facebook</span>
             <span>Email </span>
-            <span>Signup</span>
+            <span  onclick="signupFunc()">Signup</span>
         </div>
-    </div>
+    </div> 
     <div id="navigator">
         <div>
 
@@ -33,10 +33,12 @@
             <div>Hot Picks</div>
        <div>Recipes</div>
        <div>Directory</div>
-       <div>Articles</div>
+       <div id="Articles">Articles</div>
        <div>Help</div>
     </div>
 </div>
+<div id="Home_tab" class="HomeH">
+    <link rel="stylesheet" href="home.css">
 <div id="crauser">
     
         <img id="jaja" src="https://www.kindmeal.my/photos/deal/5/590-3137-m.jpg" alt="">
@@ -46,7 +48,7 @@
     
 </div>
 <div id="super">
-<div class="content">
+<div class="contents">
     <span>
         <h1>Latest News & Videos</h1>
         <div>
@@ -84,7 +86,7 @@
         
     </div>
     </div>
-    <div class="content">
+    <div class="contents">
         <span> 
             <span>
             <h1>Yummylicious Moments</h1>
@@ -127,7 +129,7 @@
             
         </div>
         </div>
-        <div class="content">
+        <div class="contents">
             <span>
                 <h1>Discover Restaurants</h1>
                 <div>
@@ -166,7 +168,7 @@
                 
             </div>
             </div>
-            <div class="content">
+            <div class="contents">
                 <span>
                     <h1>Amazing Superheroes</h1>
                     <div>
@@ -256,6 +258,136 @@
             <img src="https://www.kindmeal.my/images/banner_whykindmeal.png" alt="">
         </div>
     </div>
+</div>
+<div id="article_Tab" class="articleH">
+    <link rel="stylesheet" href="./article.css">
+    <div id="top-content">
+        <div>
+        <div>Yummy News, Articles & Videos </div>
+        <div>Want to keep updated on the latest news of delicious meat-free meals and adorable animals? Check out this section for interesting daily happenings and articles that will melt your tummy (and heart too).</div>
+        <div>You can also follow our <span onclick="fac()">Facebook Page </span>  or <span>Twitter</span> for more news and updates.</div>
+    </div>
+    </div>
+    
+    <div class="content">
+        <div>
+            <div>
+                <img src="https://www.kindmeal.my/photos/article/19/19944-l.jpg" alt="">           
+            </div>
+            <div>
+                <div> <p>Simply Good Food At 1 Mont Kiara!</p> </div>
+                <div><p>by KindMeal.my</p></div>
+                <div>Simply delicious. Simply irresistible. Simply Good Food! Enjoy 10% off with KindMeal:</div>
+                <div>
+                    <div>Video View</div>
+                    <div>21 July 2022</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content"  >
+        <div >
+            <div class="spec1">
+                <img src="https://www.kindmeal.my/photos/article/19/19937-l.jpg" alt="">           
+            </div>
+            <div>
+                <div> <p>
+                    Animals Adopting Other Animals</p> </div>
+                <div><p>by KindMeal.my</p></div>
+                <div>These BFFs may look a little different... but they are buddies nevertheless! ❤</div>
+                <div>
+                    <div>Video View</div>
+                    <div>20 July 2022</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div>
+            <div class="spec2">
+                <img src="https://www.kindmeal.my/photos/article/19/19936-l.jpg" alt="">           
+            </div>
+            <div>
+                <div> <p>
+                    Malaysia Seizes Elephant Tusks, Pangolin Scales In Major Bust</p> </div>
+                <div><p>by KindMeal.my</p></div>
+                <div>Malaysian authorities have seized African elephant tusks, pangolin scales, tiger teeth, and other wildlife skulls and bones with an estimated worth of RM80 million. Well done and bravo!</div>
+                <div>
+                    <div>Video View</div>
+                    <div>20 July 2022</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div>
+            <div>
+                <img src="https://www.kindmeal.my/photos/article/19/19943-l.jpg" alt="">           
+            </div>
+            <div>
+                <div> <p>
+                    Veganism Meets Star Trek In Our Latest Episode Of Pop Culture And Animals, And T..</p> </div>
+                <div><p>by Compession Over Killing</p></div>
+                <div>Veganism🌱 meets Star Trek🛸 in our latest episode of Pop Culture and Animals, and the connection is more than just Paul Wesley playing Captain Kirk in the next season of Star Trek: Strange New Worlds. Click here to watch #GoVegan #veganism</div>
+                <div>
+                    <div>Video View</div>
+                    <div>19 July 2022</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div>
+            <div>
+                <img src="https://www.kindmeal.my/photos/article/19/19942-l.jpg" alt="">           
+            </div>
+            <div>
+                <div> <p>
+                    All Animals Deserve To Be Happy. Let''s Continue To Create A Loving World For Ani..</p> </div>
+                <div><p>by Compassion Over Killing</p></div>
+                <div>All animals deserve to be happy. Let's continue to create a loving world for animals everywhere. #animalrights #GoVegan Image: Tom Woollard / We Animals Media</div>
+                <div>
+                    <div>Video View</div>
+                    <div>19 July 2022</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div>
+            <div class="spec3">
+                <img src="https://www.kindmeal.my/photos/article/19/19940-l.jpg" alt="">           
+            </div>
+            <div>
+                <div> <p>
+                    The Science On Fish Sentience Is Clear Fish Have The Capacity To Suffer And Feel..</p> </div>
+                <div><p>by Compassion Over Killing</p></div>
+                <div>The science on fish sentience is clear: fish have the capacity to suffer and feel pain.” - Becca Franks, fish scientist. Read about our 2019 investigation, the first-ever undercover exposé of salmon aquaculture in the U.S. here:</div>
+                <div>
+                    <div>Video View</div>
+                    <div>21 July 2022</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div>
+            <div class="spec4">
+                <img src="https://www.kindmeal.my/photos/article/19/19941-l.jpg" alt="">           
+            </div>
+            <div>
+                <div> <p>
+                    Cows Trapped In The Animal Agriculture System Suffer Unnatural Lives Of Torture...</p> </div>
+                <div><p>by Compassion Over Killing</p></div>
+                <div>Cows trapped in the animal agriculture system suffer unnatural lives of torture. They don't belong crammed together in filthy conditions, but instead should be allowed the freedom any living creature deserves. To learn more about what a cow's life is like in the dairy industry, watch The Life of Win..</div>
+                <div>
+                    <div>Video View</div>
+                    <div>21 July 2022</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
     <div id="footer">
         <span>
         <div> 
@@ -291,7 +423,7 @@
         <div>
             <p>Social Media</p>
             <p>KindMeal Widget</p>
-            <p>Facebook</p>
+            <p >Facebook</p>
             <p>Twitter</p>
             <p>Instagram</p>
         </div>
@@ -329,6 +461,14 @@
 </html>
 
 <script>
+    let homeTab=document.getElementById("Home_tab");
+    let articleTab=document.getElementById("article_Tab")
+    document.getElementById("Articles").addEventListener("click",function(event){
+        event.preventDefault();
+        articleTab.classList.remove("articleH")
+        homeTab.classList.add("articleH");
+
+    })
     let imagesLink=[
         "https://www.kindmeal.my/photos/deal/5/590-3137-m.jpg",
     "https://www.kindmeal.my/photos/deal/4/424-1404-m.jpg",
@@ -355,4 +495,19 @@
         }
         jaja.src=imagesLink[imageState];
     })
+
+    function signupFunc(){
+        
+        document.location.href="signup.html"
+        
+    }
+    function signinFunc(){
+        
+        document.location.href="signin.html"
+        
+    }
+
+    function fac(){
+        document.location.href="https://www.facebook.com/"
+    }
 </script>
