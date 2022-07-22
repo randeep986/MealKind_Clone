@@ -13,15 +13,15 @@
         <div>
             
             <div><img src="https://www.kindmeal.my/images/follow_blog_grey.png" alt=""></div>
-            <div><img src="https://www.kindmeal.my/images/follow_facebook_grey.png" alt=""></div>
+            <div ><img src="https://www.kindmeal.my/images/follow_facebook_grey.png" alt=""></div>
             <div><img src="https://www.kindmeal.my/images/follow_twitter_grey.png" alt=""></div>
 
         </div>
         <div id="top-right">
-            <span>Login</span>
-            <span>Facebook</span>
+            <span  onclick="signinFunc()">Login</span>
+            <span onclick="fac()">Facebook</span>
             <span>Email </span>
-            <span>Signup</span>
+            <span  onclick="signupFunc()">Signup</span>
         </div>
     </div> 
     <div id="navigator">
@@ -265,29 +265,10 @@
         <div>
         <div>Yummy News, Articles & Videos </div>
         <div>Want to keep updated on the latest news of delicious meat-free meals and adorable animals? Check out this section for interesting daily happenings and articles that will melt your tummy (and heart too).</div>
-        <div>You can also follow our <span>Facebook Page </span>  or <span>Twitter</span> for more news and updates.</div>
+        <div>You can also follow our <span onclick="fac()">Facebook Page </span>  or <span>Twitter</span> for more news and updates.</div>
     </div>
     </div>
-    <div id="page_number">
-        <div>
-            <div>Page</div>
-            <div>1</div>
-            <div>2 </div>
-            <div>3</div>
-            <div>4</div>
-            <div>5</div>
-            <div>6</div>
-            <div>7</div>
-            <div>8</div>
-            <div>9</div>
-            <div>10</div>
-            <div>...</div>
-            <div>57</div>
-        </div>
-        <div>
-            Next
-        </div>
-    </div>
+    
     <div class="content">
         <div>
             <div>
@@ -442,7 +423,7 @@
         <div>
             <p>Social Media</p>
             <p>KindMeal Widget</p>
-            <p>Facebook</p>
+            <p >Facebook</p>
             <p>Twitter</p>
             <p>Instagram</p>
         </div>
@@ -482,8 +463,8 @@
 <script>
     let homeTab=document.getElementById("Home_tab");
     let articleTab=document.getElementById("article_Tab")
-    let article= document.getElementById("Articles").addEventListener("click",function(ele){
-        ele.preventDefault();
+    document.getElementById("Articles").addEventListener("click",function(event){
+        event.preventDefault();
         articleTab.classList.remove("articleH")
         homeTab.classList.add("articleH");
 
@@ -514,4 +495,19 @@
         }
         jaja.src=imagesLink[imageState];
     })
+
+    function signupFunc(){
+        
+        document.location.href="signup.html"
+        
+    }
+    function signinFunc(){
+        
+        document.location.href="signin.html"
+        
+    }
+
+    function fac(){
+        document.location.href="https://www.facebook.com/"
+    }
 </script>
