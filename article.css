@@ -65,15 +65,15 @@
 
 .content>div>div{
     border: 0px solid brown;
-    /* height: 300px; */
+    /* height: auto; */
 }
 .content>div>div~div{
     border: 0px solid black;
     padding: 40px;    
-    /* height: 300px;  */
+    height: auto; 
 }
 .content>div>div:nth-child(2)>div:nth-child(1){
-    font-size: 36px;
+    font-size: 2rem;
 }
 .content>div>div:nth-child(2)>div:nth-child(3){
     margin-top: 40px;
@@ -87,7 +87,7 @@
 
 }
 .content>div>div:nth-child(2)>div:nth-child(4)>div:first-child{
-    border: 0px solid red;
+
     padding: 10px 55px;
     border-radius: 15px;
     font-size: 20px;
