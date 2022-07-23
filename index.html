@@ -27,14 +27,14 @@
     <div id="navigator">
         <div>
 
-            <div>Home</div>
-            <div>Meal Deals</div>
-            <div>KindMoments</div>
-            <div>Hot Picks</div>
-       <div>Recipes</div>
-       <div>Directory</div>
-       <div id="Articles">Articles</div>
-       <div>Help</div>
+            <div id="Home">Home</div>
+            <div id="Meal">Meal Deals</div>
+            <div id="Kind">KindMoments</div>
+            <div id="Hot">Hot Picks</div>
+            <div id="Recipes">Recipes</div>
+            <div id="Directory">Directory</div>
+            <div id="Articles">Articles</div>
+            <div id="Help">Help</div>
     </div>
 </div>
 <div id="Home_tab" class="HomeH">
@@ -240,8 +240,8 @@
         <div><p>Any restaurant or cafe can join KindMeal, vegetarian or not, as long as the deals and menu featured are meat-free.
             Enjoy a great meat-free dining experience. Easily save animal lives, health, environment and money now!
             </p></div>
-            <div>
-                <div>
+            <div id="Join_KindMeal">
+                <div >
                     <h1>
                         Join KindMeal Now
                     </h1>
@@ -388,6 +388,22 @@
         </div>
     </div>
 </div>
+<div id="Meal_Tab" class="mealH">
+    <link rel="stylesheet" href="./article.css">
+    <div id="top-content">
+        <div>
+        <div>Hot Delicious Meals at Exciting pricing </div>
+        <div>Browse delicious meat-free, vegetarian deals from top restaurants and cafes! Just click on "Get Free Coupon" to obtain instant discounts and dine at the restaurants. No upfront payment, booking or printing is needed. If you share it on social media, you'll even DOUBLE your discount!
+        </div>
+        <div>Download our mobile app now to easily get coupons and start dining in a few seconds. Effortlessly save lives, health, environment and money now!</div>
+    </div>
+    </div>
+    <div id="mid"> 
+        <div><p>This section is under construction<br> Sorry for the inconvenience</p></div>
+        <div>
+            </div> 
+            </div>
+    </div>
     <div id="footer">
         <span>
         <div> 
@@ -457,57 +473,6 @@
         <p>Copyright © KindMeal.my, 2014 - 2022. All rights reserved.</p>
         <p>This website promotes compassionate, meat-free dining experience. Some food may contain eggs, dairy products or alcohol, please view individual listings for details.</p>
     </span>
+    <script src="./index.js"></script>
 </body>
 </html>
-
-<script>
-    let homeTab=document.getElementById("Home_tab");
-    let articleTab=document.getElementById("article_Tab")
-    document.getElementById("Articles").addEventListener("click",function(event){
-        event.preventDefault();
-        articleTab.classList.remove("articleH")
-        homeTab.classList.add("articleH");
-
-    })
-    let imagesLink=[
-        "https://www.kindmeal.my/photos/deal/5/590-3137-m.jpg",
-    "https://www.kindmeal.my/photos/deal/4/424-1404-m.jpg",
-    "https://www.kindmeal.my/photos/deal/6/664-4296-m.jpg"
-    ]
-    let leftBtn=document.getElementById("left-btn")
-    let rightBtn=document.getElementById("right-btn")
-    let crouser=document.getElementById("jaja")
-    let imageState=0;
-    rightBtn.addEventListener("click", function(){
-        imageState++;
-        if(imageState===imagesLink.length){
-            imageState=0;
-        }
-
-            jaja.src=imagesLink[imageState];
-    
-    
-    })
-    leftBtn.addEventListener("click", function(){
-        imageState--;
-        if(imageState<0){
-            imageState=imagesLink.length-1
-        }
-        jaja.src=imagesLink[imageState];
-    })
-
-    function signupFunc(){
-        
-        document.location.href="signup.html"
-        
-    }
-    function signinFunc(){
-        
-        document.location.href="signin.html"
-        
-    }
-
-    function fac(){
-        document.location.href="https://www.facebook.com/"
-    }
-</script>
